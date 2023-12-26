@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="com.crm.GenericUtils.ListenerImpClass"></listener>
+	</listeners>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.Contacts_Module.CreateContacts_POMTest"/>
+      <class name="com.Contacts_Module.CreateContUsingOrg_POMTest"/>
+      <class name="com.Organization_Module.CreateOrgWIthAllFileds_POMTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
